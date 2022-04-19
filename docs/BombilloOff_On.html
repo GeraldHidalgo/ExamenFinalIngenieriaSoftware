@@ -1,0 +1,91 @@
+<!doctype html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Bombillo Off/On</title>
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+		<style type="text/css">
+			body,html
+			{
+				width:100%;
+				height:100%;
+				padding:0;
+				margin:0;
+				overflow:hidden;
+				font-family:Arial Black, sans-serif;
+			}
+			h1 
+			{
+				text-align: center;
+				font-family: AR JULIAN, Arial;
+				color:orange;
+				background-color:#607D8B;
+				border-radius:60px;
+				padding:0.5%;				
+			}
+			.panel-footer 
+			{ 
+			  text-align:center;
+			  font-family: Arial Black;
+			  bottom:1%;
+			  background-color:orange;
+			}
+			#miMenu
+			{
+				font-family:Arial Black, sans-serif;
+				border-bottom: 3px solid #0040FF;
+			}
+		</style>
+	</head>
+	<body>
+		<br>
+			<nav class="nav nav-tabs">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#miMenu">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span> 
+						</button>
+						
+						<a class="navbar-brand" href="Examen3.html">Examen 3</a>
+					</div>
+					<div class="collapse navbar-collapse" id="miMenu">
+						<ul class="nav nav-tabs">
+							<li class="active"><a href="index.html">INICIO</a></li>
+							<li><a href="BombilloOff_On.html">BOMBILLO Off/On</a></li>
+							<li><a href="potencia.html">POTENCIA</a></li> 
+							<li><a href="colores.html">COLORES</a></li> 
+							<li><a href="grid.html">GRID</a></li> 
+						</ul>
+					</div> 
+				</div>
+			</nav>
+		
+			<div class="ejercicio">
+				<script type="text/javascript">
+				
+					$(
+						function()
+						{
+							var imagen=$('#imagen1');
+							
+							imagen.on('dblclick',function() {imagen.attr('src','imagenes/lamp_off.jpg')});
+							imagen.on('click', 	 function() {imagen.attr('src','imagenes/lamp_on.jpg')});
+						}
+					);
+				</script>
+				
+				<h1>¡¡ Prende el bombillo con un clic y apagalo con dos clic !!</h1>
+				<br><br>
+				<div align="center" id="imagen">
+					<img src="imagenes/lamp_off.jpg" id="imagen1" width="280" height="260" alt="" class="img-responsive" >
+				</div>
+				<br><br>
+			</div>
+			<div align="center" class="panel-footer">| Grettel Navarro Rodríguez | gnavarror0034@uvirtual.ac.cr | (506) 8372-8260 |</div>
+
+	</body>
+</html>

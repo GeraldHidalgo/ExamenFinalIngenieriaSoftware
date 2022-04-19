@@ -1,0 +1,105 @@
+<!doctype html>
+
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>N° al Cuadrado</title>
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+		<style type="text/css">
+			body, html
+			{
+				height: 100%;
+				width: 100%;
+				margin: 0px;
+				padding: 0px;
+				font-family:Arial Black, sans-serif;
+			}
+			h1 
+			{
+				text-align: center;
+				font-family:Arial Black, sans-serif;
+				font-size:2.7em;
+				color:blue;
+				padding:2%;
+				background-image:url("imagenes/mate2.jpg");
+			}
+			h2
+			{
+				text-align: center;
+				font-family:Arial Black, sans-serif;
+				font-size:2.7em;
+				color:blue;
+				padding:1%;
+				
+			}
+			.panel-footer 
+			{ 
+			  text-align:center;
+			  font-family: Arial Black;
+			  bottom:1%;
+			  background-color:#0040FF;
+			  color:white;
+			}
+			#miMenu
+			{
+				font-family:Arial Black, sans-serif;
+				border-bottom: 3px solid #0040FF;
+			}
+			
+		</style>
+	</head>
+	
+	<body>
+		<br>
+		<nav class="nav nav-tabs ">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#miMenu">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span> 
+					</button>
+					  
+					<a class="navbar-brand" href="Examen3.html">Examen 3</a>
+				</div>
+				<div class="collapse navbar-collapse" id="miMenu">
+					<ul class="nav nav-tabs">
+						<li class="active"><a href="index.html">INICIO</a></li>
+						<li><a href="BombilloOff_On.html">BOMBILLO Off/On</a></li>
+						<li><a href="potencia.html">POTENCIA</a></li> 
+						<li><a href="colores.html">COLORES</a></li> 
+						<li><a href="grid.html">GRID</a></li> 
+					</ul>
+				</div>
+			</div>
+		</nav>		
+		<script type="text/javascript">
+			$(
+				function()
+				{
+					$('#n1').on('click',function(){$('#n1').val('');});
+
+					
+					$('#b1').on('click',function(){
+											var num=$('#n1');
+											num.val(num.val() * num.val());
+											});
+				}			
+			);
+		</script>
+		<br><br>
+		<h2>Averigua cuál es el resultado del cuadrado de un número</h2>
+		<h1></h1>
+		<br><br><br><br>
+		<div align="center">
+			<strong>Número:</strong>
+			<input type="text" id="n1">
+				
+			<button id="b1"> <strong>X<sup>2</sup></strong></button>
+		</div>
+		<br><br><br><br><br><br><br><br>
+		<div align="center" class="panel-footer">| Grettel Navarro Rodríguez | gnavarror0034@uvirtual.ac.cr | (506) 8372-8260 |</div>
+	</body>
+</html>

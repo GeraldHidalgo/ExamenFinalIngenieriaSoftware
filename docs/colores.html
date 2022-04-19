@@ -1,0 +1,101 @@
+<!doctype html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Cambio de color </title>
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+		<style type="text/css">
+			body,html
+			{
+				width:100%;
+				height:100%;
+				padding:0;
+				margin:0;
+				overflow:hidden;
+				background-color: #000000;
+				font-family:Arial Black, sans-serif;
+			}
+			h1 
+			{
+				text-align: center;
+				font-family: Bahnschrift Light, Arial, sans-serif;
+				color:white;
+				background-image:url("imagenes/colores.gif");
+				padding:1.5%;
+				
+			}
+			table{
+				border-spacing:3px;
+				font-family:Arial Black,Arial,Sans-Serif;
+				font-size:2em;
+				border: 4px solid gray;
+				text-align:Center;
+			}
+			.panel-footer 
+			{ 
+			  text-align:center;
+			  font-family: Arial Black;
+			  bottom:1%;
+			}
+			#miMenu
+			{
+				font-family:Arial Black, sans-serif;
+				border-bottom: 3px solid #0040FF;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<br>
+		<nav class="nav nav-tabs ">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#miMenu">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span> 
+					</button>
+					  
+					<a class="navbar-brand" href="Examen3.html">Examen 3</a>
+				</div>
+				<div class="collapse navbar-collapse" id="miMenu">
+					<ul class="nav nav-tabs">
+						<li class="active"><a href="index.html">INICIO</a></li>
+						<li><a href="BombilloOff_On.html">BOMBILLO Off/On</a></li>
+						<li><a href="potencia.html">POTENCIA</a></li> 
+						<li><a href="colores.html">COLORES</a></li> 
+						<li><a href="grid.html">GRID</a></li> 
+					</ul>
+				</div>
+			</div>
+		</nav>
+		
+		<script type="text/javascript">
+			function color(objeto, col)
+			{
+				objeto.bgColor=col;
+			}
+		</script>
+		<br><br>
+		<h1><strong>¡¡ Pon el mouse encima del COLOR y descubre que pasa !!</strong></h1>
+		<br><br><br><br>
+		
+		<table style="margin:0 auto;">
+			<tr>
+				<td onMouseOver="color(this,'#ff0000')" onMouseOut="color(this, '#ffffff')">_Rojo_</td>
+				<td onMouseOver="color(this,'#27AE60')" onMouseOut="color(this, '#ffffff')">_Verde_</td>
+				<td onMouseOver="color(this,'#9B59B6')" onMouseOut="color(this, '#ffffff')">_Morado_</td>
+				<td onMouseOver="color(this,'#F4D03F')" onMouseOut="color(this, '#ffffff')">_Amarillo_</td>
+				<td onMouseOver="color(this,'#F48FB1')" onMouseOut="color(this, '#ffffff')">_Rosado_</td>
+				<td onMouseOver="color(this,'#3498DB')" onMouseOut="color(this, '#ffffff')">_Azul_</td>
+				<td onMouseOver="color(this,'#FF6F00')" onMouseOut="color(this, '#ffffff')">_Anaranjado_</td>
+			</tr>
+		</table>
+		<br><br><br><br><br><br><br><br>
+		<div align="center" class="panel-footer">| Grettel Navarro Rodríguez | gnavarror0034@uvirtual.ac.cr | (506) 8372-8260 |</div>
+		
+	</body>
+
+</html>

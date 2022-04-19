@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+	<head>  <title>Inicio</title>  <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/carousel.css" rel="stylesheet">
+		<script src="js/jquery-1.11.2.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<style type="text/css">
+			
+			.carousel-inner .item img,
+			.carousel-inner .item img               { width: 100%;}
+			.container .carousel-indicators .active { background-color:green;}
+			.container .carousel-indicators li      { border: 1px solid green;}
+			.container .panel-footer                { margin-top:30px;}
+			
+			p
+			{
+				text-align:justify;
+			}
+			ol
+			{
+				text-align:left;
+			}
+			footer 
+			{ 
+			  text-align:center;
+			  font-family: Arial Black;
+			  font-size:1.1em;
+			  bottom:1%;
+			  background-color:#CED8F6;
+			  color:gray;
+			  padding:1.5%;
+			}
+			#miMenu
+			{
+				font-family:Arial Black, sans-serif;
+				border-bottom: 3px solid #0040FF;
+			}
+		 </style>
+
+	</head>
+
+	<body>
+		<div class="container">
+			<nav class="nav nav-tabs">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#miMenu">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span> 
+						</button>
+			  
+						<a class="navbar-brand" href="Examen3.html">Examen 3</a>
+					</div>
+			
+					<div class="collapse navbar-collapse" id="miMenu">
+						<ul class="nav nav-tabs">
+							<li class="active"><a href="index.html">INICIO</a></li>
+							<li><a href="BombilloOff_On.html">BOMBILLO Off/On</a></li>
+							<li><a href="potencia.html">POTENCIA</a></li> 
+							<li><a href="colores.html">COLORES</a></li> 
+							<li><a href="grid.html">GRID</a></li> 
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<br><br>
+			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+					<li data-target="#myCarousel" data-slide-to="2"></li>
+					<li data-target="#myCarousel" data-slide-to="3"></li>
+				</ol>
+
+				<div class="carousel-inner" role="listbox">
+					<div class="item active"> 
+						<a href="BombilloOff_On.html">
+							<img src="imagenes/bombillos.gif" alt="Bombillo" width="200" height="110">
+						</a>
+					</div>
+					
+					<div class="item">
+						<img src="imagenes/potencias.jpg" alt="Potencia" width="200" height="110">
+					</div>
+					
+					<div class="item">
+						<img src="imagenes/pacman.gif" alt="Colores" width="200" height="110">
+					</div>       
+				  
+					<div class="item">
+						<img src="imagenes/grid2.png" alt="Grid" width="200" height="110">
+					</div>
+				</div>
+
+				<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					<span class="sr-only">Siguiente</span>
+				</a>
+			
+				<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					<span class="sr-only">Anterior</span>
+				</a>
+		   
+			</div>
+		    <br> <br>
+		</div>
+		
+		<div class="container marketing">
+			<div class="row">
+				<div class="col-lg-4">
+					<img class="img-circle" src="imagenes/covid.jpg" alt="Covid 19" width="140" height="130">
+					<h2>La pandemia del covid 19</h2>
+					<p>La COVID-19 afecta de distintas maneras en función de cada persona. La mayoría de las personas que se contagian presentan
+					síntomas de intensidad leve o moderada, y se recuperan sin necesidad de hospitalización. Los síntomas más habituales son los siguientes:
+						<ol>
+							<li>Fiebre</li>
+							<li>Tos seca</li>
+							<li>Cansancio</li>
+						</ol>
+					</p>
+					<p>Otros síntomas menos comunes son los siguientes: 
+						<ol>
+							<li>Molestias y dolores</li>
+							<li>Dolor de garganta</li>
+							<li>Diarrea</li>
+							<li>Conjuntivitis</li>
+							<li>Dolor de cabeza</li>
+							<li>Pérdida del sentido del olfato o del gusto</li>
+							<li>Erupciones cutáneas o pérdida del color en los dedos de las manos o de los pies</li>
+						</ol>
+					</p>
+					<p><a class="btn btn-default" href="https://es.wikipedia.org/wiki/Pandemia_de_COVID-19" role="button">Ver más Detalles... &raquo;</a></p>
+				</div>
+				
+				<div class="col-lg-4">
+					<img class="img-circle" src="imagenes/oncilla.png" alt="La oncilla" width="150" height="130">
+					<h2>La oncilla</h2>
+					<p> Una de las especies vulnerables en Costa Rica es la oncilla. La oncilla (conocida como tigrillo) es la especie de gatos salvajes
+					más pequeña en el país. Vive en elevaciones, como montañas y volcanes  y es particularmente silencioso y difícil de encontrar. 
+					</p>
+					<p>La principal razón por la que no sabemos mucho sobre esta especie es porque su tamaño puede confundirse con el de un gato doméstico.
+					Por tanto, sus huellas tienden a ser complicadas de identificar, especialmente si se encuentran cerca de zonas urbanas. 
+					</p>
+					<p>¿Cómo sabemos si es un gato común y corriente, o una oncilla? 
+					</p>
+					<p>He ahí el detalle. Se necesita mucha, mucha investigación, para la que el gobierno 
+					simplemente no tiene suficientes recursos. 
+					</p>
+					<p><a class="btn btn-default" href="https://delfino.cr/2021/04/uniendo-esfuerzos-conservacion-y-colaboracion-en-costa-rica" role="button">Ver más detalles... &raquo;</a></p>
+				</div>
+				
+				<div class="col-lg-4">
+					<img class="img-circle" src="imagenes/cafe.jpg" alt="Bootstrap" width="140" height="140">
+					<h2>Café Tarrazú</h2>
+					<p> El café Tarrazú de Costa Rica, considerado como uno de los mejores del mundo, obtuvo protección en 180 países por medio de una certificación de la 
+					Organización Mundial de Propiedad Intelectual (OMPI)</p>
+					<p> El Gobierno costarricense explicó este viernes que la OMPI notificó de la certificación al Consejo Regulador de la Denominación de Origen del Café Tarrazú,
+					en la que señala que el nombre y el emblema solamente pueden ser utilizados bajo autorización </p>
+					<p>	Este café se produce desde 1903 en los cantones de Tarrazú, Dota y León Cortés, que conforman la llamada Zona de los Santos, situada en el sureste de la
+					provincia de San José, y tiene características especiales.</p>
+					<p>	Costa Rica, reconocido mundialmente por la calidad de su café, cuenta con unas 84.000 hectáreas cultivadas y unos 50.000 productores, la mayoría pequeños
+					en todo el país.</p>
+					<p><a class="btn btn-default" href="https://www.swissinfo.ch/spa/costa-rica-caf%C3%A9_el-caf%C3%A9-tarraz%C3%BA-de-costa-rica-obtiene-protecci%C3%B3n-en-180-pa%C3%ADses/46581126" role="button">Ver más detalles... &raquo;</a></p>
+				</div>
+			</div>
+
+			<hr class="featurette-divider">
+
+			<div class="row featurette">
+				<div class="col-md-7">
+					<h2 class="featurette-heading">La música <span class="text-muted">Los efectos de la música en el cerebro humano</span></h2>
+					<p class="lead">Escuchar música crea picos de emociones que incrementan la cantidad de dopamina, un neurotransmisor que ayuda a controlar los centros de recompensa
+					y placer del cerebro. Además ayudan a procesar otras emociones como miedo, tristeza, resentimiento y dolor, aún cuando estén presentes a nivel subconsciente.</p>
+				</div>
+				
+				<div class="col-md-5">
+					<img class="featurette-image img-responsive center-block" src="imagenes/musica.jpg" alt="La Música">
+				</div>
+			</div>
+
+			<hr class="featurette-divider">
+
+			<div class="row featurette">
+				<div class="col-md-7 col-md-push-5">
+					<h2 class="featurette-heading">Zurdos<span class="text-muted"> Algunos datos curiosos</span></h2>
+					<p class="lead">Se han dicho muchas cosas sobre lo que significa ser zurdo y si eso cambia el tipo de persona que somos, pero la verdad es algo así como un enigma.
+					Lo que sí sabemos es que solo cerca del 10% de la población en todo el mundo es zurda, pero que no hay una división equitativa entre los sexos.
+					Cerca del 12% de los hombres son zurdos, y solo el 8% de las mujeres lo es. Solo cerca del 25% de los niños que tienen dos padres zurdos también serán zurdos.</p>
+				</div>
+				
+				<div class="col-md-5 col-md-pull-7">
+					<img class="featurette-image img-responsive center-block" src="imagenes/zurdos.jpg" alt="Zurdos">
+				</div>
+			</div>
+
+			<hr class="featurette-divider">
+
+			<div class="row featurette">
+				<div class="col-md-7">
+					<h2 class="featurette-heading">Reirse <span class="text-muted">¿Es la risa la mejor medicina?</span></h2>
+					<p class="lead">Varios estudios han indicado que reírse puede reducir la producción de la hormona del estrés, cortisol, y disminuir la tensión en el corazón. 
+					Además, baja el nivel de azúcar en la sangre (lo que es bueno para los diabéticos), promueve el flujo de sangre y estimula el sistema inmunitario. Un estudio dice que,
+					en términos de ejercicio cardiovascular, un minuto de risa equivale a 10 minutos en una máquina de remar.</p>
+					<p class="lead">Como resultado, cada vez es más común el uso de la terapia de la risa, particularmente con niños.</p>
+				</div>
+				
+				<div class="col-md-5">
+					<img class="featurette-image img-responsive center-block" src="imagenes/sonreir.png" alt="Sonreir">
+				</div>
+				
+			</div>
+
+			<hr class="featurette-divider">
+
+			<footer>
+				<p class="pull-right"><a href="#">Inicio</a></p>
+				<p>&copy; I C 2021 Programación 3, UTC &middot; <a href="https://www.utc.ac.cr/web_i/">UTC</a> &middot; <a href="https://uvirtual.ac.cr/">U Virtual</a></p>
+			</footer>
+
+		</div>
+
+			<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="" crossorigin="anonymous"></script>
+			<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+			<script src="js/ie10-viewport-bug-workaround.js"></script>
+	</body>
+</html>
